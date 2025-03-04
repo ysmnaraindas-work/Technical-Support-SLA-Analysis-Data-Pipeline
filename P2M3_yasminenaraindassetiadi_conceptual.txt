@@ -1,0 +1,32 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui!
+
+    NoSQL adalah jenis database yang berbeda dari database biasa (RDBMS) yang menggunakan tabel untuk menyimpan data. NoSQL dirancang untuk mengelola data yang sangat banyak dan tidak selalu memiliki bentuk yang tetap. Database ini cocok untuk data yang sulit disusun dalam tabel, seperti data yang belum terstruktur atau yang bisa berubah-ubah. Contoh database NoSQL yang terkenal adalah MongoDB, Cassandra, dan Redis.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System!
+
+    - Menggunakan NoSQL saat data yang dikelola tidak teratur atau sulit diatur dalam tabel, atau ketika data sangat besar dan terus berkembang. Misalnya, untuk aplikasi media sosial, toko online dengan banyak pengguna dan transaksi, atau aplikasi yang membutuhkan waktu respons sangat cepat.
+
+    - dan menggunakan RDBMS saat data yang dikelola sudah terstruktur rapi dalam tabel dan ada hubungan antar data yang perlu dijaga, serta membutuhkan proses pencarian data yang rumit. RDBMS lebih cocok untuk aplikasi seperti sistem keuangan, pengelolaan stok barang, atau aplikasi yang membutuhkan keakuratan dan konsistensi data.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut!
+
+    - MongoDB: MongoDB adalah jenis database yang menyimpan data dalam bentuk file yang bisa diubah-ubah, seperti JSON. Kelebihan MongoDB adalah dapat menyimpan berbagai jenis data yang tidak terstruktur dan dapat berkembang seiring waktu tanpa harus mengikuti aturan yang ketat.
+
+    - Cassandra: Apache Cassandra adalah database yang dirancang untuk menyimpan dan mengelola data dalam jumlah sangat besar dan tersebar di banyak tempat. Kelebihan Cassandra adalah kemampuannya untuk menangani banyak data dengan cepat dan selalu tersedia, cocok untuk aplikasi yang membutuhkan kecepatan tinggi dan dapat menyimpan data dalam jumlah besar, seperti sistem penyimpanan log atau big data.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri!
+
+    Apache Airflow adalah alat gratis yang digunakan untuk mengatur dan menjadwalkan tugas-tugas dalam alur kerja data. Alat ini membantu pengguna untuk membuat, mengatur waktu, dan memantau tugas-tugas yang harus dilakukan secara berurutan. Setiap tugas dalam Airflow adalah pekerjaan yang dapat dijalankan sendiri, dan tugas-tugas ini disusun dalam urutan yang jelas. Keunggulan Airflow adalah kemampuannya untuk mengatur alur kerja yang rumit, dapat digunakan untuk pekerjaan besar, dan bisa mengotomatisasi tugas seperti mengambil, mengubah, dan memasukkan data.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri!
+
+    Great Expectations adalah alat gratis yang membantu kita memeriksa dan memastikan kualitas data. Dengan alat ini, kita bisa membuat aturan-aturan untuk memeriksa apakah data kita sesuai dengan yang diinginkan, misalnya apakah data tersebut memiliki tipe yang benar, apakah nilainya dalam batas yang tepat, atau apakah ada nilai yang hilang. Alat ini sangat membantu untuk mencegah kesalahan data, menjaga agar data tetap akurat sebelum digunakan lebih lanjut, dan secara otomatis membuat laporan yang mudah dipahami tentang kualitas data.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)!
+
+    Batch processing adalah cara untuk mengolah data dengan cara mengumpulkan data dalam jumlah besar terlebih dahulu, kemudian memprosesnya sekaligus dalam satu waktu tertentu, bukan langsung setiap saat. Cara ini lebih efisien untuk menangani data yang banyak dan tidak membutuhkan perubahan langsung. Contohnya, sistem yang menghitung gaji karyawan setiap bulan atau aplikasi yang mengolah data besar pada waktu-waktu tertentu.
+
+## Contoh Kasus Penggunaan:
+- Memproses transaksi bank setiap hari sekaligus dalam satu proses.
+- Menganalisis data log server secara bersamaan untuk membuat laporan penggunaan sistem.
+- Alat yang bisa digunakan untuk pemrosesan dalam jumlah besar antara lain Apache Hadoop, Apache Spark, dan Airflow (untuk mengatur jadwal dan mengelola proses).

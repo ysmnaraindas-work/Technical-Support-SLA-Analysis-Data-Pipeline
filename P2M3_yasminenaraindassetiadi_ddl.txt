@@ -1,0 +1,77 @@
+# URL dataset yang dijadikan acuan
+
+[https://www.kaggle.com/datasets/bhavikjikadara/retail-transactional-dataset]
+
+---
+# Syntax DDL untuk pembuatan table.
+
+CREATE TABLE table_m3 (
+    "Transaction_ID" FLOAT,                   -- ID transaksi
+    "Customer_ID" FLOAT,                      -- ID pelanggan
+    "Name" VARCHAR(255),                       -- Nama pelanggan
+    "Email" VARCHAR(255),                      -- Email pelanggan
+    "Phone" FLOAT,                             -- Nomor telepon pelanggan
+    "Address" VARCHAR(255),                    -- Alamat pelanggan
+    "City" VARCHAR(100),                       -- Kota pelanggan
+    "State" VARCHAR(100),                      -- Negara bagian
+    "Zipcode" FLOAT,                           -- Kode pos
+    "Country" VARCHAR(100),                    -- Negara
+    "Age" FLOAT,                               -- Usia pelanggan
+    "Gender" VARCHAR(10),                      -- Jenis kelamin pelanggan
+    "Income" VARCHAR(50),                      -- Pendapatan pelanggan
+    "Customer_Segment" VARCHAR(100),           -- Segmentasi pelanggan
+    "Date" VARCHAR(50),                        -- Tanggal transaksi
+    "Year" FLOAT,                              -- Tahun transaksi
+    "Month" VARCHAR(50),                       -- Bulan transaksi
+    "Time" VARCHAR(50),                        -- Waktu transaksi
+    "Total_Purchases" FLOAT,                   -- Jumlah pembelian yang dilakukan pelanggan
+    "Amount" FLOAT,                            -- Jumlah uang yang dibelanjakan oleh pelanggan
+    "Total_Amount" FLOAT,                      -- Total uang yang dibelanjakan
+    "Product_Category" VARCHAR(100),           -- Kategori produk
+    "Product_Brand" VARCHAR(100),              -- Merek produk
+    "Product_Type" VARCHAR(100),               -- Tipe produk
+    "Feedback" TEXT,                           -- Ulasan atau umpan balik pelanggan
+    "Shipping_Method" VARCHAR(100),            -- Metode pengiriman produk
+    "Payment_Method" VARCHAR(50),              -- Metode pembayaran
+    "Order_Status" VARCHAR(50),                -- Status pesanan (misal: shipped, delivered, canceled)
+    "Ratings" FLOAT,                           -- Rating pelanggan
+    "Products" VARCHAR(255)                    -- Produk yang dibeli pelanggan
+);
+
+
+---
+# Syntax DML untuk melakukan insert data ke database. Anda bisa menggunakan perintah `COPY` untuk melakukan insert data.
+
+COPY table_m3 (
+    "Transaction_ID" ,                   
+    "Customer_ID" ,                     
+    "Name" ,                      
+    "Email" ,                     
+    "Phone" ,                     
+    "Address" ,                   
+    "City" ,                      
+    "State" ,                     
+    "Zipcode" ,                   
+    "Country" ,                   
+    "Age" ,                        
+    "Gender" ,                     
+    "Income" ,                   
+    "Customer_Segment" ,         
+    "Date" ,                     
+    "Year" ,                     
+    "Month" ,                    
+    "Time" ,                     
+    "Total_Purchases" ,          
+    "Amount" ,                   
+    "Total_Amount" ,             
+    "Product_Category" ,         
+    "Product_Brand" ,            
+    "Product_Type" ,             
+    "Feedback" ,                 
+    "Shipping_Method" ,          
+    "Payment_Method" ,           
+    "Order_Status" ,             
+    "Ratings" ,                  
+    "Products"                   
+)
+FROM '/dags/P2M3_yasminenaraindassetiadi_data_raw.csv' DELIMITER ',' CSV HEADER;
